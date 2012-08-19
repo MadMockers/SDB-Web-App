@@ -5,7 +5,7 @@
  * We can't provide you with this so ask your host if you are unsure
  */
 
-$mysql_host = "127.0.0.1";
+$mysql_host = "127.0.0.1:3306";
 $mysql_user = "";
 $mysql_pass = "";
 $mysql_db = "";
