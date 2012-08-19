@@ -10,6 +10,22 @@ $mysql_user = "";
 $mysql_pass = "";
 $mysql_db = "";
 
+/* Set this to the name you want to show on all pages. */
+
+$sitename = "Simple Death Bans Web";
+
+/* Set this to the text you want to show on browser tabs. */
+
+$tabname = "Simple Death Bans Web";
+
+/* Set this to the time you want banned players to be shown for, in minutes */
+
+$bantime = "60";
+
+/* Set to the name of the theme you wish to use, theme names are in the css folder */
+
+$theme = "Cyborg";
+
 /* You can edit these reasons to your liking */
 
 $banreasons = array
@@ -45,5 +61,7 @@ if(!$mysql_con)
 {
     die("<b>Error:</b> There is a problem with the database connection.<br/>");
 }
+
+include("functions.php");
 
 ?>

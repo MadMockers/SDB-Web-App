@@ -1,14 +1,15 @@
 <?php
 
-include("config.php");
-
 function GetBans()
 {
     global $banreasons;
+
+
     $sql = "SELECT `player`, `cause`, `by`, `date` FROM `deathbans` WHERE `active`=1 ORDER BY `id` DESC;";
     $result = mysql_query($sql);
-    if (!$result) {
-        echo "Could not successfully run query ($sql) from DB: " . mysql_error();
+    if (!$result)
+    {
+        echo "Could not successfully run query ($sql) on DB: " . mysql_error();
         exit;
     }
     ?>
