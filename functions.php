@@ -52,6 +52,11 @@ function GetBans()
 
 function dbConnect()
 {
+	global $mysql_host;
+	global $mysql_user;
+	global $mysql_pass;
+	global $mysql_db;
+	
 	$mysql_con = mysql_connect($mysql_host, $mysql_user, $mysql_pass);
 
 	mysql_select_db($mysql_db) or die(mysql_error());
