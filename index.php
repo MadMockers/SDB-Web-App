@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 include("config.php");
+include("functions.php");
 ?>
 <head>
     <meta charset="utf-8">

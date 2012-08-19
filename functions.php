@@ -49,5 +49,14 @@ function GetBans()
         </tbody>
     </table>
     <?php
-    }
+}
+
+$mysql_con = mysql_connect($mysql_host, $mysql_user, $mysql_pass);
+
+mysql_select_db($mysql_db) or die(mysql_error());
+
+if(!$mysql_con)
+{
+    die("<b>Error:</b> There is a problem with the database connection.<br/>");
+}
 ?>
