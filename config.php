@@ -18,12 +18,12 @@ $sitename = "Simple Death Bans Web";
 
 $tabname = "Simple Death Bans Web";
 
-/* Set this to the time you want banned players to be shown for, in minutes */
+/* Set this to the time you want banned players to be shown for, in minutes (0 for permanent) */
 
-$bantime = "60";
+$bantime = 0;
 
-/* Set to the name of the theme you wish to use, theme names are in the css folder */
-
+/* Set to the name of the theme you wish to use, theme names are in the css folder
+ * You can find more themes at http://bootswatch.com/ */
 $theme = "Cyborg";
 
 /* You can edit these reasons to your liking */
