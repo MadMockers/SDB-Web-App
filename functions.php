@@ -32,7 +32,7 @@ function GetBans()
 
            echo "<td>";
             $reason = $row["cause"];
-            echo $banreasons["$reason"];
+            echo $banreasons[$reason];
             echo "</td>";
 
             echo "<td>";
