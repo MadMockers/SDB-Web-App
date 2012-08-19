@@ -3,6 +3,8 @@
 <?php
 include("config.php");
 include("functions.php");
+
+dbConnect();
 ?>
 <head>
     <meta charset="utf-8">
