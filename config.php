@@ -20,7 +20,7 @@ $tabname = "Simple Death Bans Web";
 
 /* Set this to the time you want banned players to be shown for, in minutes */
 
-$bantime = "60";
+$bantime = "0";
 
 /* Set to the name of the theme you wish to use, theme names are in the css folder */
 
