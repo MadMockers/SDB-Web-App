@@ -56,7 +56,7 @@ dbConnect();
 
 <div class="container">
 
-    <h1>Recent Bans</h1>
+    <h1>Recent Deaths</h1>
     <?php
     GetBans();
     ?>
