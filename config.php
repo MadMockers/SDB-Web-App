@@ -22,8 +22,10 @@ $tabname = "Simple Death Bans Web";
 
 $bantime = 0;
 
-/* Set to the name of the theme you wish to use, theme names are in the css folder
- * You can find more themes at http://bootswatch.com/ */
+/* 
+ * Set to the name of the theme you wish to use, theme names are in the css folder
+ * You can find more themes at http://bootswatch.com/ 
+ */
 
 $theme = "Cyborg";
 
