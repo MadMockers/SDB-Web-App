@@ -4,7 +4,6 @@ function GetBans()
 {
     global $banreasons;
 
-
     $sql = "SELECT `player`, `cause`, `by`, `date` FROM `deathbans` WHERE `active`=1 ORDER BY `id` DESC;";
     $result = mysql_query($sql);
     if (!$result)
@@ -51,12 +50,16 @@ function GetBans()
     <?php
 }
 
-$mysql_con = mysql_connect($mysql_host, $mysql_user, $mysql_pass);
-
-mysql_select_db($mysql_db) or die(mysql_error());
-
-if(!$mysql_con)
+function dbConnect()
 {
-    die("<b>Error:</b> There is a problem with the database connection.<br/>");
+	$mysql_con = mysql_connect($mysql_host, $mysql_user, $mysql_pass);
+
+	mysql_select_db($mysql_db) or die(mysql_error());
+
+	if(!$mysql_con)
+	{
+		die("<b>Error:</b> There is a problem with the database connection.<br/>");
+	}
 }
+
 ?>
