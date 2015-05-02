@@ -3,8 +3,14 @@
 function GetBans()
 {
     global $banreasons;
+    global $bantime;
 
-    $sql = "SELECT `player`, `cause`, `by`, `date` FROM `deathbans` WHERE `active`=1 ORDER BY `id` DESC;";
+    $diedafter = 0;
+    if($bantime != 0)
+    	$diedafter = (time() - $bantime * 60) * 1000;
+    
+    $sql = "SELECT `player`, `cause`, `by`, `date` FROM `deathbans` WHERE `active`=1 AND `date` > ${diedafter} ORDER BY `id` DESC;";
+        
     $result = mysql_query($sql);
     if (!$result)
     {
